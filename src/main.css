@@ -1,0 +1,39 @@
+.root textarea, .root .hexEditor{
+	display: inline-block;
+	width: 300px;
+	margin: 36px;
+	height: 300px;
+}
+
+.root .hexEditor{
+	border: 1px solid red;
+	position: relative;
+	font-family: monospace;
+	font-size: 16px;
+	font-weight: bold;
+	width: 495px;
+	vertical-align: top;
+	
+}
+.root .hexEditor div{
+	overflow-y: scroll;
+	height: 100%;
+	
+}
+
+.root .hexEditor span{
+	white-space: pre;
+}
+
+
+.root .hexEditor:before{
+	content: '00 01 02 03 04 05 06 07 08 09 aa bb cc dd ee ff';
+	position: absolute;
+	top: -20px;
+}
+
+.root input[type='file']{
+	display: block;
+	margin: 36px;
+	margin-bottom: 0;
+}
